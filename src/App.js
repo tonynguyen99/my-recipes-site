@@ -1,10 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./Navbar";
-import Header from "./Header";
-import RecipeItems from "./RecipeItems";
-import RecipeAddItem from "./RecipeAddItem";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import RecipeItems from "./components/RecipeItems";
+import RecipeAddItem from "./components/RecipeAddItem";
 import React from "react";
+import Counter from "./features/counter/Counter";
 
 function App() {
   const [recipes, editRecipes] = React.useState([]);
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <RecipeAddItem />
       <RecipeItems />
+      <Counter />
     </div>
   );
 }
