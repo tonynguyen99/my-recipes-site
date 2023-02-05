@@ -4,7 +4,7 @@ import Recipe from "./Recipe";
 import { v4 as uuidv4 } from "uuid";
 
 function RecipeItems() {
-  const recipes = [
+  const recipesHardcoded = [
     {
       key: uuidv4(),
       title: "Recipe title",
@@ -19,15 +19,7 @@ function RecipeItems() {
     },
   ];
 
-  console.log(recipes);
-
-  return (
-    <div className="recipe-items">
-      {recipes.map((recipe) => {
-        return <Recipe title={recipe.title} description={recipe.description} date={recipe.date} />;
-      })}
-    </div>
-  );
+  return <div className="recipe-items">hello</div>;
 }
 
 export default RecipeItems;
